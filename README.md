@@ -1,2 +1,2 @@
 "# sitnshop" 
-"# maintain frontend folder and backend folder for good coding"
+"# maintain frontend directory and backend directory for good coding"
