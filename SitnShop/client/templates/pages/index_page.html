@@ -29,7 +29,7 @@
 
 		{% load el_pagination_tags %}
 		{% with entry_list as e %}
-			{% paginate e %}
+			{% lazy_paginate e %}
 
 
   		{% for entry in entries %}
