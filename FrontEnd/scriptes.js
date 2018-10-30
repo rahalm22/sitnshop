@@ -17,3 +17,22 @@ function readURL(input)
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+function openStatus() {
+    document.getElementById("status").style.height = "100%";
+}
+
+/* Close */
+function closeStatus() {
+    document.getElementById("status").style.height = "0%";
+}

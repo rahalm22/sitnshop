@@ -19,7 +19,7 @@
 
 		  <div class="navbar">
   			 <a href="profile_index.html" style="float: left;font-family: 'Aclonica';"><img class="icon" src="Images/icon2.jpg" alt="Sicon"><h3>itnShop</h3></a> 
-  			 <a href="#"><i class="fa fa-fw fa-envelope"></i><h3> Contact</h3></a> 
+  			 <a href="javascript:void(0)" class="closebtn" onclick="openNav();"><i class="fa fa-fw fa-envelope"></i><h3> Contact</h3></a> 
   			 <a href="index.html"><i class="fas fa-arrow-alt-circle-right"></i><h3> Logout</h3></a>
          	 <a href="#"><img class="icon2" src="Images/s1.jpg" alt="dpicon"><h3 style="margin-left: 5px;"> Rahal's Shop</h3></a>
   			 <div class="search-container">
@@ -28,7 +28,37 @@
       				  <input type="text" placeholder="Search" name="search">
       			 </form>
   		   </div>
-       </div>
+      </div>
+
+      <!-- Contact overlay -->
+      <div id="myNav" class="ContactOverlay"> 
+        <!-- Overlay content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="ContactOverlay-content">
+          <div class="ContactContainer">
+            <div style="text-align:center">
+              <h2>Contact Us</h2>
+              <h4>Do you have anything to say? leave us a message:</h4>
+            </div>
+            <div class="ContactRow">
+              <div class="ContactColumn">
+                <img src="Images/st1.jpg" style="width:100%">
+              </div>
+              <div class="ContactColumn">
+                <form action="/action_page.php">
+                  <label for="fname"><h4>First Name:</h4></label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                  <label for="lname"><h4>Last Name:</h4></label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+                  <label for="lname"><h4>Your message:</h4></label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="cover" style="margin-top: 100px;">
         <h1 class="profile" style="">RAHAL'S SHOP</h1>
