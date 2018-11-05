@@ -130,6 +130,65 @@ h1.profile:hover
 {
   text-decoration: none;
 }
+h1.aboutHead
+{
+  font-family: 'Open Sans', sans-serif;
+  color:rgb(72,72,72);
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+}
+h1.aboutHead:hover
+{
+  color:rgb(72,72,72);
+  cursor: pointer;
+  text-decoration: none;
+}
+h1.aboutDetails
+{
+  font-family: 'Open Sans', sans-serif;
+  color:rgb(72,72,72);
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 13px; 
+  display: block; 
+}
+h1.aboutDetails:hover
+{
+  color:rgb(72,72,72);
+  cursor: pointer;
+  text-decoration: none;
+}
+h1.aboutDetailsLink
+{
+  font-family: 'Open Sans', sans-serif;
+  color:rgb(72,72,72);
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 13px; 
+  display: block; 
+  overflow: hidden;
+}
+h1.aboutDetailsLink:hover
+{
+  color:rgb(72,72,72);
+  cursor: pointer;
+  text-decoration: underline;
+}
+i.about
+{
+  margin-right: 5px;
+}
 h4 /* address of the shop */
 {
   display: inline-block;
@@ -147,6 +206,22 @@ h4.followers
 {
   margin-top: 0px; 
   margin-left: 200px;
+}
+h4.statusName
+{
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  font-style: lighter;
+  color:rgb(72,72,72);
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 10px;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 } 
 h5 /* follow */
 {
@@ -386,15 +461,12 @@ div.navbar
 div.statusbar 
 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: nowrap;
   max-width: 760px;
   background-color: rgb(255,255,255);
   overflow: auto;
   white-space: nowrap;
-  border-color: rgb(232,232,232);
-  border-style: solid;
-  border-width: 1px;
+  
   z-index: 100;
   margin: auto;
   margin-top: 40px;
@@ -402,6 +474,20 @@ div.statusbar
   border-color: rgb(220,220,220);
   border-style: solid;
   border-width: 1px;
+}
+div.statusbar > div
+{
+  width: 100px;
+
+}
+img.statusDp /* icons of the shops in posts */
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline;
+  margin-left:10px; 
+  margin-top:10px;
 }
 
 .StatusOverlay 
@@ -453,7 +539,7 @@ div.statusbar
 div.status
 {
   max-width: 300px;
-  max-height: 650px;
+  height:80vh;
   background-color: rgb(255,255,255);
   margin: auto;
   border-color: rgb(220,220,220);
@@ -486,6 +572,7 @@ div.status:hover .StatusPostOverlay {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 101;
 }
 .StatusChangeIconLeft {
   color: white;
@@ -496,17 +583,19 @@ div.status:hover .StatusPostOverlay {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 101;
 }
-
-img.statusDp /* icons of the shops in posts */
+.StatusProgressBar
 {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: inline;
-  float : left;
-  margin-left:10px; 
-  margin-top:10px;
+  background-color:rgb(72,72,72);
+  color: rgb(72,72,72);
+  width:0%;display: block;height: 2px; 
+  margin-top: 5px;  
+  -webkit-transition: all 2s linear;  
+  -moz-transition: all 2s linear;  
+  -o-transition: all 2s linear;  
+  -ms-transition: all 2s linear;  
+  transition: all 2s linear;
 }
 img.statusPost
 {

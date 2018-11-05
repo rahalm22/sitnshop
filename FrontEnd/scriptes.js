@@ -30,6 +30,7 @@ function closeNav() {
 
 function openStatus() {
     document.getElementById("status").style.height = "100%";
+    document.getElementById("progressBar").style.width = "100%";
 }
 
 /* Close */
